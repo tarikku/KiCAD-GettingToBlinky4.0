@@ -1,0 +1,180 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GTB:7555 U1
+U 1 1 5BC38425
+P 5700 3700
+F 0 "U1" H 5950 3200 50  0000 L CNN
+F 1 "7555" H 5600 3850 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 3700 50  0001 C CNN
+F 3 "" H 5700 3700 50  0001 C CNN
+	1    5700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BC3856A
+P 4400 3200
+F 0 "R1" H 4470 3246 50  0000 L CNN
+F 1 "1K" H 4470 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4330 3200 50  0001 C CNN
+F 3 "~" H 4400 3200 50  0001 C CNN
+	1    4400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BC3863E
+P 4400 3800
+F 0 "R2" H 4470 3846 50  0000 L CNN
+F 1 "470K" H 4470 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4330 3800 50  0001 C CNN
+F 3 "~" H 4400 3800 50  0001 C CNN
+	1    4400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BC38678
+P 6700 4050
+F 0 "R3" H 6770 4096 50  0000 L CNN
+F 1 "1K" H 6770 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6630 4050 50  0001 C CNN
+F 3 "~" H 6700 4050 50  0001 C CNN
+	1    6700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5BC389A6
+P 6700 4600
+F 0 "D1" V 6738 4483 50  0000 R CNN
+F 1 "LED" V 6647 4483 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6700 4600 50  0001 C CNN
+F 3 "~" H 6700 4600 50  0001 C CNN
+	1    6700 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 3500 4400 3500
+Wire Wire Line
+	4400 3350 4400 3500
+Connection ~ 4400 3500
+Wire Wire Line
+	4400 3500 4400 3650
+Wire Wire Line
+	5800 3150 5800 2950
+Wire Wire Line
+	5800 2650 4400 2650
+Wire Wire Line
+	4400 2650 4400 3050
+Wire Wire Line
+	5600 3150 5600 2950
+Wire Wire Line
+	5600 2950 5800 2950
+Connection ~ 5800 2950
+Wire Wire Line
+	5800 2950 5800 2650
+Wire Wire Line
+	6150 3700 6700 3700
+Wire Wire Line
+	6700 3700 6700 3900
+Wire Wire Line
+	6700 4200 6700 4450
+Wire Wire Line
+	5250 3700 4950 3700
+Wire Wire Line
+	4950 3700 4950 3900
+Wire Wire Line
+	4950 4200 4400 4200
+Wire Wire Line
+	4400 4200 4400 3950
+Wire Wire Line
+	5250 3900 4950 3900
+Connection ~ 4950 3900
+Wire Wire Line
+	4950 3900 4950 4200
+Wire Wire Line
+	4400 4450 4400 4200
+Connection ~ 4400 4200
+Wire Wire Line
+	4400 4750 4400 4950
+Wire Wire Line
+	4400 4950 5600 4950
+Wire Wire Line
+	5600 4950 5600 4250
+Wire Wire Line
+	6700 4750 6700 4950
+Wire Wire Line
+	6700 4950 5600 4950
+Connection ~ 5600 4950
+Text Label 4650 2650 0    50   ~ 0
+VDD
+$Comp
+L power:GND #PWR02
+U 1 1 5BC395DC
+P 5600 5150
+F 0 "#PWR02" H 5600 4900 50  0001 C CNN
+F 1 "GND" H 5605 4977 50  0000 C CNN
+F 2 "" H 5600 5150 50  0001 C CNN
+F 3 "" H 5600 5150 50  0001 C CNN
+	1    5600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5150 5600 4950
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5BC39993
+P 3400 4000
+F 0 "BT1" H 3518 4096 50  0000 L CNN
+F 1 "Battery_Cell" H 3518 4005 50  0000 L CNN
+F 2 "GTB:QJ.BS-6" V 3400 4060 50  0001 C CNN
+F 3 "~" V 3400 4060 50  0001 C CNN
+	1    3400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3800 3400 3250
+Wire Wire Line
+	3400 3250 3700 3250
+$Comp
+L power:GND #PWR01
+U 1 1 5BC3A321
+P 3400 4400
+F 0 "#PWR01" H 3400 4150 50  0001 C CNN
+F 1 "GND" H 3405 4227 50  0000 C CNN
+F 2 "" H 3400 4400 50  0001 C CNN
+F 3 "" H 3400 4400 50  0001 C CNN
+	1    3400 4400
+	1    0    0    -1  
+$EndComp
+Text Label 3700 3250 2    50   ~ 0
+VDD
+Wire Wire Line
+	3400 4100 3400 4400
+$Comp
+L Device:C C1
+U 1 1 5BC3B34B
+P 4400 4600
+F 0 "C1" H 4515 4646 50  0000 L CNN
+F 1 "1U" H 4515 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4438 4450 50  0001 C CNN
+F 3 "~" H 4400 4600 50  0001 C CNN
+	1    4400 4600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
