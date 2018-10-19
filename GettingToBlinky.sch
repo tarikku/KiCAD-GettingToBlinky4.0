@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:GettingToBlinky-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -177,4 +178,5 @@ F 3 "~" H 4400 4600 50  0001 C CNN
 	1    4400 4600
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5800 4250
 $EndSCHEMATC
