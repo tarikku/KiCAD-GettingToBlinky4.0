@@ -1,5 +1,5 @@
 # KiCAD-GettingToBlinky4.0
-The PCB I made following Chris Gammell's KiCAD 4.0 tutorial - Getting To Blinky 4.0
+The PCB I made following Chris Gammell's KiCAD 4.0 tutorial - Getting To Blinky 4.0 (https://www.youtube.com/playlist?list=PLy2022BX6Eso532xqrUxDT1u2p4VVsg-q).
 
 I used the most recent version of KiCAD (5.0) to create the PCB. The main difference I encountered, as identified by the DRC, was that the battery holder footprint did not include a courtyard. This seems not to have been checked in KiCAD 4.0.
 
